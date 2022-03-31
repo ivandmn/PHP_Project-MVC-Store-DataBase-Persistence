@@ -1,0 +1,78 @@
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+table {
+    border-collapse: collapse;
+}
+table th, tr, td {
+   border: solid thin blue;
+}
+table th {
+    background-color: lightgray;
+}
+
+form label {
+    float: left;
+    clear: left;
+    min-width: 7em;
+}
+
+form input {
+    float: left;
+    min-width: 7em;
+}
+
+form button {
+    float: left;
+    min-width: 7em;
+}
+
+table a {
+    text-decoration: none;
+}
+
+table a:hover {
+    color:brown;
+}
+
+.alert {
+    background-color: #58d4ce;
+    color: yellow;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    min-height: 300px;
+}
+.errors{
+    color: red;
+}
+
+.infoText{
+    color: blue;
+}
