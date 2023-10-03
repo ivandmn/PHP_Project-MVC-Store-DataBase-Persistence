@@ -2,11 +2,12 @@
 
 namespace store\model\persist;
 
+use PDO;
 use store\model\Product;
 use type;
 
-require_once 'model/persist/StorePdoDb.php';
-require_once 'model/Product.php';
+require_once __DIR__ . '/StorePdoDb.php';
+require_once  __DIR__ . '/../Product.php';
 
 
 /**
