@@ -1,6 +1,8 @@
 <?php
    //get parameters passed in by controller.
-   $product = $params['product']??null; 
+use store\model\Product;
+
+$product = $params['product']??null;
    $action = $params['action']??"";
    $result = $params['result']??null;
    $message = $params['message']??null;

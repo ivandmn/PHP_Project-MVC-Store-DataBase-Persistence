@@ -1,6 +1,8 @@
 <?php
    //get parameters passed in by controller.
-   $user = $params['user']??null; 
+use store\model\User;
+
+$user = $params['user']??null;
    $action = $params['action']??"";
    $result = $params['result']??null;
    $message = $params['message']??null;

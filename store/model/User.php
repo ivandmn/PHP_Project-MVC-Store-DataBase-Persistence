@@ -1,69 +1,87 @@
 <?php
+
+namespace store\model;
 /**
  * ADT for user.
  *
  * @author ivandmn
  */
-class User {
+class User
+{
 
     public function __construct(
-        private ?int $id = 0, 
-        private ?string $username = null, 
-        private ?string $password = null, 
-        private ?string $role = null, 
-        private ?string $name = null, 
+        private ?int    $id = 0,
+        private ?string $username = null,
+        private ?string $password = null,
+        private ?string $role = null,
+        private ?string $name = null,
         private ?string $surname = null
-    ) { }
+    )
+    {
+    }
 
-    public function getId(): ?int {
+    public function getId(): ?int
+    {
         return $this->id;
     }
 
-    public function getUsername(): ?string {
+    public function getUsername(): ?string
+    {
         return $this->username;
     }
 
-    public function getPassword(): ?string {
+    public function getPassword(): ?string
+    {
         return $this->password;
     }
 
-    public function getRole(): ?string {
+    public function getRole(): ?string
+    {
         return $this->role;
     }
 
-    public function getName(): ?string {
+    public function getName(): ?string
+    {
         return $this->name;
     }
 
-    public function getSurname(): ?string {
+    public function getSurname(): ?string
+    {
         return $this->surname;
     }
 
-    public function setId(int $id): void {
+    public function setId(int $id): void
+    {
         $this->id = $id;
     }
 
-    public function setUsername(string $username): void {
+    public function setUsername(string $username): void
+    {
         $this->username = $username;
     }
 
-    public function setPassword(string $password): void {
+    public function setPassword(string $password): void
+    {
         $this->password = $password;
     }
 
-    public function setRole(string $role): void {
+    public function setRole(string $role): void
+    {
         $this->role = $role;
     }
 
-    public function setName(string $name): void {
+    public function setName(string $name): void
+    {
         $this->name = $name;
     }
 
-    public function setSurname(string $surname): void {
+    public function setSurname(string $surname): void
+    {
         $this->surname = $surname;
     }
 
-    public function __toString(): string {
+    public function __toString(): string
+    {
         $result = "User{";
         $result .= sprintf("[id=%s]", $this->id);
         $result .= sprintf("[username=%s]", $this->username);
